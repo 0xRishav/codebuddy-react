@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Form1 = ({ handleChange, formData, nextStep }) => {
+function Form1({ handleChange, formData, nextStep }) {
   const [errors, setErrors] = useState({});
 
   const validateEmail = email => {
@@ -66,6 +66,6 @@ const Form1 = ({ handleChange, formData, nextStep }) => {
       </button>
     </div>
   );
-};
+}
 
 export default Form1;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Posts = () => {
+function Posts() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -44,6 +44,6 @@ const Posts = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Posts;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Form2 = ({ handleChange, formData, nextStep, prevStep }) => {
+function Form2({ handleChange, formData, nextStep, prevStep }) {
   const [errors, setErrors] = useState({});
 
   const validateName = name => {
@@ -83,6 +83,6 @@ const Form2 = ({ handleChange, formData, nextStep, prevStep }) => {
       </button>
     </div>
   );
-};
+}
 
 export default Form2;

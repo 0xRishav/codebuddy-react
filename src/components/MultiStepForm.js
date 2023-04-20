@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FormStep from './FormStep';
 
-const MultiStepForm = () => {
+function MultiStepForm() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({});
 
@@ -49,6 +49,6 @@ const MultiStepForm = () => {
       />
     </div>
   );
-};
+}
 
 export default MultiStepForm;

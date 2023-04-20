@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Form3 = ({ handleChange, formData, prevStep, handleSubmit }) => {
+function Form3({ handleChange, formData, prevStep, handleSubmit }) {
   const [errors, setErrors] = useState({});
 
   const validatePhoneNumber = phoneNumber => {
@@ -87,6 +87,6 @@ const Form3 = ({ handleChange, formData, prevStep, handleSubmit }) => {
       </button>
     </div>
   );
-};
+}
 
 export default Form3;

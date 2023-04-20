@@ -2,7 +2,7 @@ import Form1 from './Form1';
 import Form2 from './Form2';
 import Form3 from './Form3';
 
-const FormStep = ({ step, handleChange, formData, nextStep, prevStep, handleSubmit, setStep }) => {
+function FormStep({ step, handleChange, formData, nextStep, prevStep, handleSubmit, setStep }) {
   const renderForm = () => {
     switch (step) {
       case 1:
@@ -63,6 +63,6 @@ const FormStep = ({ step, handleChange, formData, nextStep, prevStep, handleSubm
       {renderForm()}
     </div>
   );
-};
+}
 
 export default FormStep;
